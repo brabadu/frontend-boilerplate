@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
-import { Greeter } from './component';
+import { reducer, Greeter } from './component';
 
+const store = createStore(reducer);
 
 ReactDOM.render(
-  React.createElement(Greeter), document.getElementById('root'));
+    <Provider store={store}>
+        <Greeter />
+    </Provider>,
+    document.getElementById('root')
+ );

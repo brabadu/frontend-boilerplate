@@ -5,7 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.1"
   },
   "devDependencies": {
     "@evo/eslint-config-uaprom": "^2.0.2",
